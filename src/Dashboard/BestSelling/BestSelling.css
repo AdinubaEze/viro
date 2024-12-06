@@ -1,0 +1,70 @@
+.best-selling {
+  margin-top: 40px;
+}
+.best-selling > .top {
+  padding: 20px;
+}
+.best-selling table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.best-selling table tr:nth-child(even) {
+  background: rgba(var(--ui-secondary), 0.5);
+  border-radius: 10px;
+}
+.best-selling table th,
+.best-selling table td {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.best-selling table td {
+  color: rgb(var(--text-muted));
+  transition: var(--transition);
+}
+.best-selling table tr:hover td {
+  color: var(--text-color);
+}
+
+.pagination {
+  margin-top: 20px;
+  padding: 20px;
+  width: 100%;
+  color: rgb(var(--text-color));
+}
+.pagination .ant-pagination-options {
+  margin-left: auto;
+}
+
+.pagination li,
+.pagination a,
+.pagination span {
+  color: rgb(var(--primary)) !important;
+  background: transparent !important;
+}
+.pagination .ant-pagination-item {
+  background: rgba(var(--primary), 0.2) !important;
+}
+
+.pagination .ant-pagination-item-active,
+.pagination .ant-pagination-item-active:hover,
+.pagination .ant-select-selector,
+.pagination .ant-pagination-options-quick-jumper input,
+.pagination .ant-pagination-options-quick-jumper input:hover,
+.pagination .ant-pagination-options-quick-jumper input:focus {
+  background: transparent !important;
+  border-color: rgb(var(--primary)) !important;
+  color: rgb(var(--text-color));
+}
+
+/*  Responsive codes */
+@media screen and (max-width: 700px) {
+  .best-selling table th,
+  .best-selling table td {
+    font-size: 12px;
+  }
+  .best-selling .m-hide {
+    display: none;
+  }
+}

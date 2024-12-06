@@ -1,0 +1,25 @@
+.invoice-statistics {
+  padding: 20px;
+}
+.invoice-statistics .statistic,
+.invoice-statistics .statistic .row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.invoice-statistics .statistic .dot {
+  border-radius: 100%;
+}
+/* Responsive code */
+@media screen and (max-width: 855px) {
+  .invoice-statistics .statistics {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .invoice-statistics .statistics {
+    display: block;
+  }
+}

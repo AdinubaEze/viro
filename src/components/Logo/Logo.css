@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo .logo-icon,
+.logo h2 {
+  font-size: 20px;
+}
+.logo .logo-icon {
+  color: rgb(var(--primary));
+}

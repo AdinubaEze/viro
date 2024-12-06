@@ -1,0 +1,19 @@
+.revenue-grid {
+  display: grid;
+  grid-template-columns: auto 400px;
+  gap: 20px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+.revenue-grid > .spotlight {
+  width: 100%;
+  height: 100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 855px) {
+  .revenue-grid {
+    grid-template-columns: 100%;
+  }
+}
